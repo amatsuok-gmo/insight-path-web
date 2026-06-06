@@ -39,7 +39,6 @@ const clientSchema = z.object({
 type Errors = Partial<Record<"name" | "email" | "goals", string>>;
 
 function SignupPage() {
-  const submit = useServerFn(submitInquiry);
   const [values, setValues] = useState({ name: "", email: "", goals: "" });
   const [errors, setErrors] = useState<Errors>({});
   const [pending, setPending] = useState(false);
