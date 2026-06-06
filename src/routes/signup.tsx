@@ -65,18 +65,21 @@ function SignupPage() {
 
     setPending(true);
     try {
-      await submit({ data: parsed.data });
+      const res = await fetch(SCRIPT_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(parsed.data),
+      });
+      if (!res.ok) {
+        throw new Error("Submission failed. Please try again.");
+      }
       toast.success("Inquiry received", {
         description: "Aaron will be in touch shortly.",
       });
       setValues({ name: "", email: "", goals: "" });
-    } catch (err) {
-      console.error(err);
+    } catch {
       toast.error("Something went wrong", {
-        description:
-          err instanceof Error
-            ? err.message
-            : "Please try again in a moment.",
+        description: "Please try again in a moment.",
       });
     } finally {
       setPending(false);
