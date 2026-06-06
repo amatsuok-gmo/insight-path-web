@@ -1,10 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useServerFn } from "@tanstack/react-start";
 import { useState } from "react";
 import { toast } from "sonner";
 import { z } from "zod";
 
-import { submitInquiry } from "@/lib/inquiries.functions";
+const SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbyO6g0m27GvfdEZ3uiIsoR_x5dNx7BvbdZDYTzxpTcH72oD1olfTnnA1W_Xb_Lu-1WD/exec";
 
 export const Route = createFileRoute("/signup")({
   head: () => ({
