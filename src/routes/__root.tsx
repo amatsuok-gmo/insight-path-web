@@ -123,7 +123,7 @@ function RootShell({ children }: { children: ReactNode }) {
 }
 
 function Header() {
-  const linkBase = "text-xs uppercase tracking-widest font-semibold transition-colors";
+  const linkBase = "text-xs uppercase tracking-widest font-semibold transition-colors py-2.5";
   return (
     <nav className="sticky top-0 z-50 border-b border-stone-muted bg-paper/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
