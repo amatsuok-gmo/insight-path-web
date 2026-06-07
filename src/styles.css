@@ -43,6 +43,7 @@
   --color-ink: var(--ink);
   --color-rouge: var(--rouge);
   --color-stone-muted: var(--stone-muted);
+  --color-complement: var(--complement);
 
   --font-serif: "Playfair Display", ui-serif, Georgia, serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
@@ -56,6 +57,7 @@
   --ink: oklch(0.296 0.041 240);
   --rouge: oklch(0.555 0.171 35);
   --stone-muted: oklch(0.91 0.014 75);
+  --complement: oklch(0.45 0.09 175);
 
   --background: var(--paper);
   --foreground: var(--ink);
