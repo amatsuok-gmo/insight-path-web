@@ -158,8 +158,8 @@ function Header() {
           </Link>
           <Link
             to="/signup"
-            className={`${linkBase} text-rouge underline underline-offset-4`}
-            activeProps={{ className: `${linkBase} text-rouge underline underline-offset-4` }}
+            className={`${linkBase} rounded-md bg-complement px-5 py-2.5 text-paper shadow-sm hover:bg-complement/90`}
+            activeProps={{ className: `${linkBase} rounded-md bg-complement px-5 py-2.5 text-paper shadow-sm hover:bg-complement/90` }}
           >
             Get Started
           </Link>
