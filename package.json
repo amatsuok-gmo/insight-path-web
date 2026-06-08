@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
+    "deploy": "vite build && wrangler deploy --config dist/server/wrangler.json",
     "build:dev": "vite build --mode development",
     "preview": "vite preview",
     "lint": "eslint .",
