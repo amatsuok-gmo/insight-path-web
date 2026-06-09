@@ -11,7 +11,6 @@ export default defineConfig({
     tailwindcss(),
     TanStackRouterVite({ autoCodeSplitting: true }),
     tanstackStart({
-      customViteReactPlugin: true,
       server: { entry: "src/server.ts" },
     }),
     react(),
