@@ -13,5 +13,5 @@ export default defineConfig({
   ],
   server: {
     entry: "src/server.ts",
-  },
+  } as any,
 });
